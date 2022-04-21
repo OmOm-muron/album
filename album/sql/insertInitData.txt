@@ -1,0 +1,200 @@
+CREATE TABLE owner (
+  ownerid        VARCHAR(32) PRIMARY KEY,
+  password       VARCHAR(32) NOT NULL,
+  ownername      VARCHAR(128),
+  ownerprofile   VARCHAR(2048),
+  ownerimagepath VARCHAR(1024),
+  ownertelno     VARCHAR(32),
+  ownermail      VARCHAR(128),
+  ownertwitter   VARCHAR(1024),
+  ownerinstagram VARCHAR(1024),
+  ownerfacebook  VARCHAR(1024)
+);
+
+CREATE TABLE album (
+  imageid   SERIAL PRIMARY KEY,
+  imagepath VARCHAR(1024),
+  comment   VARCHAR(2048),
+  location  VARCHAR(128),
+  tag       VARCHAR(1024)
+);
+
+INSERT INTO owner (
+  ownerid,
+  password,
+  ownername,
+  ownerprofile,
+  ownerimagepath,
+  ownertelno,
+  ownermail,
+  ownertwitter,
+  ownerinstagram,
+  ownerfacebook
+) VALUES (
+  'TEST_OWNER',
+  'test',
+  '園治 丹亜',
+  'テスト用ユーザー\nいらすとやのご主人',
+  '/images/face.jpg',
+  '090-7897-5803',
+  'banban-ji-4972.xx_omni@outlook.com',
+  'https://twitter.com/TRANS_OMra',
+  'https://www.instagram.com/pure_omrice/',
+  ''
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/OI000038.jpg',
+  '2019年の年明けに撮影',
+  '日本 富山 氷見',
+  'japan,toyama,himi,amaharashikaigan'
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/OI000257.jpg',
+  '2018年の夏に撮影',
+  '日本 北海道 函館',
+  'japan,hokkaido,hakodate'
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/P4062947.JPG',
+  '2019年の春に撮影',
+  '日本 福井',
+  'japan,fukui,asuwagawa'
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/P5023181.JPG',
+  '2019年の春に撮影',
+  '日本 熊本 阿蘇',
+  'japan,kumamoto,aso'
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/P5023189.JPG',
+  '2019年の春に撮影',
+  '日本 熊本',
+  'japan,kumamoto,nabegataki'
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/P5043400.JPG',
+  '2019年の春に撮影',
+  '日本 佐賀 玄海',
+  'japan,saga,genkai'
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/P6205083.JPG',
+  '2020年の春に撮影',
+  '日本 徳島 剣山',
+  'japan,tokushima,tsurugisan'
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/P6205114.JPG',
+  '2020年の春に撮影',
+  '日本 徳島 剣山',
+  'japan,tokushima,tsurugisan'
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/P8182196.JPG',
+  '2018年の夏に撮影',
+  '日本 北海道 野付',
+  'japan,hokkaido,notsuke'
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/P9084506.JPG',
+  '2019年の夏に撮影',
+  '日本 和歌山 串本',
+  'japan,wakayama,kushimoto'
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/PB034674.JPG',
+  '2019年の秋に撮影',
+  '日本 和歌山 友が島',
+  'japan,wakayama,tomogashima'
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/PC014794.JPG',
+  '2019年の冬に撮影',
+  '日本 新潟 佐渡',
+  'japan,nigata,sado'
+);
+
+INSERT INTO album (
+  imagepath,
+  comment,
+  location,
+  tag
+ ) VALUES (
+  '/images/album/PC312525.JPG',
+  '2019年の冬に撮影',
+  '日本 島根 出雲',
+  'japan,shimane,izumo'
+);

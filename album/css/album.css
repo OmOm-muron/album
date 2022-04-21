@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.album {
+  margin                : 0 10%;
+  display               : grid;
+  grid-template-columns : repeat(3,1fr);
+  justify-items         : center;
+}
+.album img {
+  width : 20vw;
+  height: 15vw;
+}

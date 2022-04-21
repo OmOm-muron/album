@@ -1,0 +1,36 @@
+@charset "UTF-8";
+header {
+  padding-bottom     : 2.5%;
+  background-color  : white;
+  opacity           : 0.9;
+}
+footer {
+  bottom            : 0;
+  padding-top       : 2.5%;
+  background-color  : white;
+  opacity           : 0.9;
+}
+nav {
+  margin    : 0 10%;
+  padding   : 1% 0;
+}
+nav ul {
+  max-width : 1200px;
+  margin    : 0 10%;
+  list-style: none;
+  display   : flex;
+  justify-content : space-between;
+}
+nav a {
+  text-decoration   : none;
+  color             : grey;
+}
+nav a:hover {
+  color         : black;
+  text-shadow   : grey 0 0 0.5em;
+}
+.message {
+  text-align    : center;
+  padding-bottom: 1vh;
+  color         : red;
+}

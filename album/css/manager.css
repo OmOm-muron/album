@@ -1,0 +1,67 @@
+@charset "UTF-8";
+.login {
+  width : 40vw;
+  height: 40vh;
+  margin: 0 30%;
+}
+.login .texts {
+  display           : grid;
+  grid-template-rows: 5vh 10vh 5vh 10vh;
+}
+.login .texts input {
+  border: thin solid;
+  height: 1.5rem;
+}
+.login .buttons {
+  display               : grid;
+  grid-template-columns : 20vw 20vw;
+  justify-items         : center;
+}
+.login .buttons input {
+  width : 60%;
+  border: thin solid;
+}
+.login .buttons #submit {
+  background-color  : lightcyan
+}
+.login .buttons #reset {
+  background-color  : silver;
+}
+.secret {
+  text-align: center;
+}
+.secret a {
+  color             : lightgrey;
+  text-decoration   : none;
+}
+.manage {
+  padding-left      : 60vw;
+  padding-right     : 20vw;
+  padding-bottom    : 1vh;
+  display           : flex;
+  justify-content   : space-around;
+}
+.manage dialog {
+  border: thin solid;
+}
+.manage dialog::backdrop {
+  background: black;
+  opacity   : 60%;
+}
+.manage #delete-confirm {
+  width             : 8vw;
+  text-align        : center;
+  border            : thin solid;
+  background-color  : #ff8080;
+  cursor            : pointer;
+}
+.manage .dialog-message {
+  color : red;
+}
+.manage .dialog-buttons {
+  display           : flex;
+  justify-content   : space-around;
+}
+.manage .dialog-buttons button {
+  cursor: pointer;
+}

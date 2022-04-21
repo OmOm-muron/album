@@ -1,0 +1,20 @@
+CREATE TABLE owner (
+  ownerid        VARCHAR(32) PRIMARY KEY,
+  password       VARCHAR(32) NOT NULL,
+  ownername      VARCHAR(128),
+  ownerprofile   VARCHAR(2048),
+  ownerimagepath VARCHAR(1024),
+  ownertelno     VARCHAR(32),
+  ownermail      VARCHAR(128),
+  ownertwitter   VARCHAR(1024),
+  ownerinstagram VARCHAR(1024),
+  ownerfacebook  VARCHAR(1024)
+);
+
+CREATE TABLE album (
+  imageid   SERIAL PRIMARY KEY,
+  imagepath VARCHAR(1024),
+  comment   VARCHAR(2048),
+  location  VARCHAR(128),
+  tag       VARCHAR(1024)
+);

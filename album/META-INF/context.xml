@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+  <Resource driverClassName="org.postgresql.Driver"
+            initialSize="1"
+            maxIdle="1"
+            maxWaitMillis="-1"
+            name="jdbc/album"
+            type="javax.sql.DataSource"
+            url="jdbc:postgresql://127.0.0.1:5432/album"
+            username="postgres"
+            password="postgres"
+            defaultAutoCommit="false"
+  />
+</Context>

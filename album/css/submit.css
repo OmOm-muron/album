@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.submit {
+  display           : grid;
+  grid-template-rows: 50vh 20vh 10vh;
+  justify-items     : center;
+  align-items       : center;
+  width             : 100vw;
+  height            : 80vh;
+}
+.submit .thumbnail {
+  display           : grid;
+  grid-template-rows: 40vh 10vh;
+  justify-items     : center;
+  align-items       : center;
+}
+.submit .thumbnail img {
+  width         : 48vh;
+  height        : 36vh;
+  overflow      : hidden;
+}
+.submit textarea {
+  border        : thin solid;
+  width         : 60%;
+  height        : 80%;
+}
+.submit .button {
+  border            : thin solid;
+  background-color  : lightcyan;
+}

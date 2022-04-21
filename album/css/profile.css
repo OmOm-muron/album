@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.profile {
+  display               : grid;
+  grid-template-columns : 40vw 20vw;
+  width                 : 60vw;
+  max-height            : 85vh;
+  margin                : 0 20%;
+}
+.profile .face img {
+  width : 21vh;
+  height: 28vh;
+}
+.profile .introduce {
+  justify-self : center;
+}
+.profile .introduce h3 {
+  text-align : center;
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.detail {
+  display           : grid;
+  grid-template-rows: 60vh 20vh;
+  width             : 100vw;
+  max-height        : 80vh;
+  justify-items     : center;
+}
+.detail .thumbnail img {
+  width : 80vh;
+  height: 60vh;
+}
+.detail .comment {
+  align-self    : center;
+  text-align    : center;
+  max-height    : 20vh;
+}
